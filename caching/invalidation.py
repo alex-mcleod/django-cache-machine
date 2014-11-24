@@ -5,7 +5,7 @@ import logging
 import socket
 
 from django.conf import settings
-from django.core.cache import cache as default_cache, get_cache, parse_backend_uri
+from django.core.cache import cache as default_cache, get_cache #, parse_backend_uri # Have commented this out as it does not exist in django 1.7
 from django.core.cache.backends.base import InvalidCacheBackendError
 from django.utils import encoding, translation
 
